@@ -23,6 +23,8 @@ public class QCommentEntity extends EntityPathBase<CommentEntity> {
 
     public final StringPath comment_data = createString("comment_data");
 
+    public final DateTimePath<java.time.LocalDateTime> created_at = createDateTime("created_at", java.time.LocalDateTime.class);
+
     public final NumberPath<Long> idx = createNumber("idx", Long.class);
 
     public final NumberPath<Integer> removed = createNumber("removed", Integer.class);
